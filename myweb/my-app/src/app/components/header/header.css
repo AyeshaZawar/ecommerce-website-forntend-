@@ -1,0 +1,122 @@
+/* Container */
+.header-container {
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+/* Top Section */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+/* Search Icon for Large Screens */
+.search-icon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .search-icon {
+    display: block;
+  }
+}
+
+/* Logo */
+.logo {
+  color: #22202E;
+  font-size: 1.25rem;
+  text-align: center;
+  /* position: relative; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Cart and Contact Icons */
+.cart-contact-icons {
+  align-icons: right;
+  display: none;
+  gap: 1rem;
+
+}
+
+@media (min-width: 768px) {
+  .cart-contact-icons {
+    display: flex;
+  }
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.hamburger-menu .menu-button {
+  font-size: 1.5rem;
+  outline: none;
+  z-index: 30;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 75%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 20;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* Close Button in Mobile Menu */
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.menu-close {
+  font-size: 1.5rem;
+  outline: none;
+}
+
+/* Mobile Navigation Links */
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.mobile-nav li {
+  list-style: none;
+}
+
+.mobile-nav li a {
+  text-decoration: none;
+  color: #726E8D;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+  }
+}

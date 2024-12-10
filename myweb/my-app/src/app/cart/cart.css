@@ -1,0 +1,200 @@
+/* Custom Colors */
+:root {
+    --custom-purple: #2A254B;
+    --input-bg: #F5F5F5;
+    --button-bg: #D1D5DB;
+    --service-bg: #F9FAFB;
+    --feature-bg: #E5E7EB;
+  }
+  
+  /* General Container */
+  .cart-container {
+    background-color: #E5E7EB; /* bg-gray-200 */
+    padding-top: 2.5rem; /* pt-10 */
+    padding-bottom: 4rem; /* pb-16 */
+    width: 100%;
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    color: var(--custom-purple);
+  }
+  
+  .cart-title {
+    font-size: 1.5rem; /* text-2xl */
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .cart-container {
+      padding-left: 2.5rem; /* sm:px-10 */
+      padding-right: 2.5rem; /* sm:px-10 */
+    }
+  
+    .cart-title {
+      font-size: 1.875rem; /* sm:text-3xl */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .cart-container {
+      padding-left: 10rem; /* lg:px-40 */
+      padding-right: 10rem; /* lg:px-40 */
+    }
+  
+    .cart-title {
+      text-align: left;
+    }
+  }
+  
+  /* Product Section */
+  .product-section {
+    border: 2px solid #D1D5DB; /* border-2 */
+    padding: 1rem; /* p-4 */
+  }
+  
+  .product-header {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .product-image-container {
+    display: flex;
+  }
+  
+  .product-image {
+    width: 5rem; /* w-20 */
+    height: 5rem; /* h-20 */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.05) translateY(1rem);
+  }
+  
+  .product-details {
+    margin-left: 1.5rem; /* ml-6 */
+  }
+  
+  .product-title {
+    font-size: 1rem; /* text-base */
+    font-weight: 500; /* font-medium */
+  }
+  
+  .product-description {
+    font-size: 0.875rem; /* text-sm */
+    margin-top: 0.5rem;
+  }
+  
+  .product-price {
+    font-size: 1rem; /* text-base */
+    font-weight: 600; /* font-semibold */
+    margin-top: 0.5rem;
+  }
+  
+  /* Quantity Section */
+  .quantity-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quantity-label {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600; /* font-semibold */
+    display: none;
+  }
+  
+  @media (min-width: 1024px) {
+    .quantity-label {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+  
+  .quantity-value {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 500; /* font-medium */
+    margin-top: 0.5rem;
+  }
+  
+  /* Total Section */
+  .total-section {
+    display: none;
+  }
+  
+  @media (min-width: 1024px) {
+    .total-section {
+      display: block;
+      border: 2px solid #D1D5DB; /* border-2 */
+      padding: 1rem; /* p-4 */
+    }
+  
+    .total-header {
+      font-size: 1.125rem; /* text-lg */
+      font-weight: 600; /* font-semibold */
+    }
+  
+    .total-price {
+      font-size: 1.125rem; /* text-lg */
+      font-weight: 500; /* font-medium */
+      margin-top: 2.5rem;
+    }
+  
+    .total-discount {
+      font-size: 1.125rem; /* text-lg */
+      font-weight: 500; /* font-medium */
+      margin-top: 10rem;
+    }
+  }
+  
+  /* Subtotal Section */
+  .subtotal-section {
+    margin-top: 2.5rem; /* mt-10 */
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .subtotal-section {
+      text-align: right;
+    }
+  }
+  
+  .subtotal-header {
+    font-size: 1rem; /* text-lg */
+    font-weight: 500; /* font-medium */
+    margin-right: 1rem;
+  }
+  
+  .subtotal-price {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+  }
+  
+  .subtotal-info {
+    font-size: 0.875rem; /* text-sm */
+    margin-top: 1rem;
+  }
+  
+  .checkout-btn {
+    background-color: var(--custom-purple);
+    height: 3rem; /* h-12 */
+    width: 100%;
+    border-radius: 0.25rem; /* rounded-sm */
+    color: white;
+    margin-top: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .checkout-btn {
+      height: 3.5rem; /* sm:h-14 */
+      width: 14rem; /* sm:w-56 */
+    }
+  }
+  

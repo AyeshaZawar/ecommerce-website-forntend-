@@ -1,0 +1,75 @@
+/* Container */
+.touch-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #2A254B;
+    margin-top: 3rem;
+  }
+  
+  /* Flex container for content and image */
+  .touch-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .touch-content {
+      flex-direction: row;
+    }
+  }
+  
+  /* Text content */
+  .text-content {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle {
+    padding-top: 1.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+  
+  /* Button container */
+  .button-container {
+    margin-top: 2.5rem;
+  }
+  
+  .get-in-touch-button {
+    background-color: #F9F9F9;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    color: #2A254B;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Image container */
+  .image-container {
+    width: 100%;
+    max-width: 890px;
+  }
+  
+  .touch-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .touch-image:hover {
+    transform: scale(1.05) rotate(2deg);
+  }
+  

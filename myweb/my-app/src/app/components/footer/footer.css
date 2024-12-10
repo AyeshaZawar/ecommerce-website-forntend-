@@ -1,0 +1,88 @@
+/* Footer container */
+.footer-container {
+  padding: 2rem 1.5rem;
+  background-color: #2a254b;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+/* Footer sections */
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* Footer section styling */
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  color: #ccc;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-links h1 {
+  margin: 0.5rem 0;
+}
+
+/* Footer form */
+.footer-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-input {
+  width: 100%;
+  max-width: 300px;
+  height: 48px;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.footer-button {
+  width: 100%;
+  max-width: 100px;
+  height: 48px;
+  background-color: #fff;
+  color: #2a254b;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.footer-button:hover {
+  opacity: 0.9;
+}
+
+/* Footer divider */
+.footer-divider {
+  background-color: #4e4d93;
+  height: 1px;
+  margin: 2rem 0;
+  border: none;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+}

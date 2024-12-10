@@ -1,0 +1,106 @@
+/* Container */
+.hero-container {
+  padding: 3rem 2rem;
+}
+
+/* Flex container for left and right content */
+.hero-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .hero-flex {
+    flex-direction: row;
+  }
+}
+
+/* Left section */
+.hero-left {
+  width: 100%;
+  height: auto;
+  background-color: #2A254B;
+  color: white;
+  padding: 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+@media (min-width: 768px) {
+  .hero-left {
+    width: 60%;
+    height: 580px;
+  }
+}
+
+/* Title */
+.hero-title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+    text-align: left;
+  }
+}
+
+/* Button Container */
+.hero-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .hero-button-container {
+    justify-content: flex-start;
+  }
+}
+
+/* Button */
+.hero-button {
+  width: 170px;
+  height: 56px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #606060;
+  font-weight: bold;
+}
+
+/* Description Text */
+.hero-description {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+/* Right Section (Image) */
+.hero-right {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+  .hero-right {
+    width: 40%;
+    height: 580px;
+  }
+}

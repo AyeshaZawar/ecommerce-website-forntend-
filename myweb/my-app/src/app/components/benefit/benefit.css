@@ -1,0 +1,103 @@
+/* Section styling */
+.benefit-section {
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+  color: #2a254b;
+  margin-top: 3rem;
+}
+
+/* Container styling */
+.benefit-container {
+  width: 100%;
+  max-width: 1340px;
+  height: 350px;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Title styling */
+.benefit-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .benefit-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Subtitle styling */
+.benefit-subtitle {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .benefit-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Form container */
+.form-container {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Form styling */
+.benefit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .benefit-form {
+    flex-direction: row;
+  }
+}
+
+/* Input styling */
+.benefit-input {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 354px;
+  height: 56px;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .benefit-input {
+    margin-bottom: 0;
+  }
+}
+
+/* Button styling */
+.benefit-button {
+  padding: 0.5rem;
+  background-color: #2a254b;
+  color: white;
+  width: 100%;
+  max-width: 118px;
+  height: 56px;
+  border: none;
+  cursor: pointer;
+}
+
+.benefit-button:hover {
+  opacity: 0.9;
+}
